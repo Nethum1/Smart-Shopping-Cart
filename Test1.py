@@ -1,5 +1,6 @@
 #include <ESP32Servo.h>
 
+
 // Primary Ultrasonic Sensor (Front Scanning)
 #define TRIG_PIN 18
 #define ECHO_PIN 19
