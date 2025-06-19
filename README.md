@@ -1,3 +1,5 @@
+![WhatsApp Image 2025-06-09 at 18 48 26_a5a65248](https://github.com/user-attachments/assets/c615da99-7c00-42e0-9b68-950a52adb413)
+
 This is a Smart Shopping Cart project built using ESP32, sensors, and motor drivers to simulate intelligent automation for retail environments. The cart is designed to navigate, detect obstacles, and assist users with automated features.
 
 🚀 Features
