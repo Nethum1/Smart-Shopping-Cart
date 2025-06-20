@@ -111,12 +111,12 @@ void loop() {
   delay(300);
 
   if (minDistance > 0 && minDistance < DETECTION_DISTANCE) {
-    Serial.println("📦 Object detected – moving forward");
+    Serial.println(" Object detected – moving forward");
     moveForward();
     delay(MOTOR_SPEED_DELAY);
     stopMotors();
   } else {
-    Serial.println("❌ No object in range");
+    Serial.println(" No object in range");
     stopMotors();
   }
 
@@ -127,14 +127,14 @@ void loop() {
   Serial.println(" cm");
 
   if (!coverOpen && coverDist > 0 && coverDist < DETECTION_DISTANCE) {
-    Serial.println("🟢 Object detected by cover sensor – opening cover");
+    Serial.println(" Object detected by cover sensor – opening cover");
     coverServo.write(-15);  // Open cover (adjust angle as needed)
     coverOpen = true;
     coverOpenTime = millis();
   }
 
   if (coverOpen && (millis() - coverOpenTime >= coverDuration)) {
-    Serial.println("🔴 Closing cover after 10 seconds");
+    Serial.println(" Closing cover after 10 seconds");
     coverServo.write(220);  // Close cover
     coverOpen = false;
   }
